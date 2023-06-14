@@ -12,10 +12,17 @@ header {
 }
 
 .desktop {
+    margin: 0 24px;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .desktop ul {
     display: flex;
     list-style-type: none;
+}
+
+.desktop li {
+    padding-left: 16px;
 }
