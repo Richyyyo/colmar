@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 64px;
+}
+
+.desktop {
+    display: flex;
+}
+
+.desktop ul {
+    display: flex;
+    list-style-type: none;
+}
