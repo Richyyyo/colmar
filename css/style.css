@@ -39,6 +39,10 @@ main {
     font-size: 1.5rem;
 }
 
+.mobile {
+    display: none;
+}
+
 .desktop ul {
     display: flex;
     list-style-type: none;
@@ -141,7 +145,7 @@ a {
 
 .info {
     display: flex;
-    margin-bottom: 4%;
+    margin-bottom: 0;
 }
 
 .info img {
@@ -272,4 +276,145 @@ video {
 footer {
     text-align: center;
     font-family: 'Poppins', sans-serif;
+}
+
+@media only screen and (max-width:480px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    header {
+        overflow: hidden;
+
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .mobile-logo {
+        display: flex;
+        height: 30px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    .banner {
+        display: block;
+    }
+
+    .banner-image {
+        width: 100%;
+        padding: 0;
+    }
+
+    .banner-content {
+        width: 100%;
+        padding: 32px 16px;
+    }
+
+    .content {
+        display: block;
+        padding: 0;
+    }
+
+    .content-image {
+        display: none;
+    }
+
+    .content-side {
+        width: 100%;
+        padding-bottom: 32px;
+    }
+
+    .info {
+        display: block;
+        padding: 16px 16px;
+    }
+
+    .info img {
+        max-width: 100%;
+    }
+
+    .info-content {
+        padding-left: 16px;
+    }
+
+    .info-color {
+        background-color: #ffffff;
+    }
+
+    .subcontent {
+        background-color: #ffffff;
+        padding: 32px 0;
+    }
+
+    .subcontent-header {
+        padding-top: 0;
+    }
+
+    .box-container {
+        display: block;
+        grid-template-rows: auto auto auto auto;
+        grid-gap: 200px;
+        padding: 0 16px;
+    }
+
+    .box {
+        background-color: #d8d8d8;
+        padding: 16px 0 24px 16px;
+        margin-bottom: 8px;
+
+    }
+
+    .box img {
+        display: none;
+    }
+
+    .box-info {
+        width: 100%;
+        padding: 0;
+    }
+
+    .box-info p {
+        display: none;
+    }
+
+    .bottom {
+        padding: 0;
+    }
+
+    .bottom p,
+    h4 {
+        display: none;
+    }
+
+    .bottom-header {
+        padding-top: 0;
+    }
+
+    .sub-bottom {
+        display: block;
+        padding: 16px 0 24px 0;
+    }
+
+    .bottom-content {
+        width: 100%;
+        padding: 0;
+    }
+
+    .bottom-side {
+        display: none;
+    }
+
+    footer {
+        padding: 16px 0;
+    }
 }
