@@ -293,18 +293,23 @@ footer {
     }
 
     .mobile {
-        display: block;
+        display: flex;
         width: 100%;
-        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 15px;
     }
 
     .mobile-logo {
         display: flex;
-        height: 30px;
+        width: 100%;
         align-items: center;
         justify-content: space-between;
     }
 
+    .mobile img {
+        width: 3em;
+    }
 
     .banner {
         display: block;
